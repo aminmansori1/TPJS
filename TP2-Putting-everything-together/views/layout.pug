@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= title || "📚 Book Tracker"
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css")
+    link(rel="icon", href="https://cdn-icons-png.flaticon.com/512/29/29302.png")
+  body(class="bg-gradient-to-br from-indigo-100 via-blue-100 to-white min-h-screen flex flex-col items-center justify-center")
+    if success
+      .fixed.top-5.bg-green-100.text-green-800.border-l-4.border-green-500.px-4.py-2.rounded.shadow= success
+    if error
+      .fixed.top-5.bg-red-100.text-red-800.border-l-4.border-red-500.px-4.py-2.rounded.shadow= error
+    
+    block content
+
+    footer.mt-10.text-center.text-gray-600.text-sm
+      | © 2025 Book Tracker App — ENSA Khouribga | Made with ❤️ by Maryam Ketatni
