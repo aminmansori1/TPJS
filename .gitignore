@@ -15,3 +15,7 @@ pids
 *.seed
 __pycache__/
 *.sqlite3
+# Ignore large local images used for screenshots/docs
+/Book-Reading-tracker-tp/IMG-TP.png
+/Book-Reading-tracker-tp/IMG1-TP.png
+/Book-Reading-tracker-tp/IMG2-MONGO.png
